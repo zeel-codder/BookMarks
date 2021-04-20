@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarks</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+
+
+<body>
+    <h4 style="text-align: center; width: 100%;" class="head">BookMarks</h4>
+
+    <navbar>
+       <div class="navbar-text" onclick="ShowAddBookMarks(event)"><a href="#">Add</a></div>
+    </navbar>
+    <div class="container">
+        <form class="add-bookmark" onsubmit="AddBookMark(event)">
+                <h3 style="width: 100%; color: white; text-align: center;">Add BookMark</h3>
+                <input type="url" placeholder="Enter Url" id="url" required>
+                <input type="text" placeholder="Enter Name" id="urlname" required>
+                <button type="submit" class="btn" title="Add BookMark">Add BookMark</button>
+        </form>
+
+        <div class="List" style="align-items: flex-start;"> 
+        <div class="topnav">
+            <h1>List of Urls:</h1>
+            <h1>
+                Search:<input  id="search" type="search" placeholder="Enter Name for search">
+            </h1>
+            <h1>
+
+                <form  class="SortButton" onsubmit="Sort(event)">
+                    Sorting: 
+                    <select class="btn" id="sort-section" >
+                        <option value="text">Name</option>
+                        <option value="time">Time</option>
+                    </select>
+                    <button type="submit" class="btn" style="padding: 7px;">Sort</button>
+                </form>
+            </h1>
+            
+        </div>
+        <!-- <div class="topnav"> -->
+        <!-- </div> -->
+        <div class="ListUl">
+            
+
+        </div>
+        </div>
+    </div>
+</body>
+
+<script src="Page.js"></script>
+</html>

@@ -1,0 +1,21 @@
+{
+
+    "manifest_version": 3,
+    "name": "BookMarks",
+    "version": "1.0.0",
+  
+    "description": "This Project is about to store the BookMarks and Use of Browser Extensions",
+  
+    "icons": {
+      "48": "Book.png"
+    },
+  
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["activeTab","storage"],
+    "action": {
+      "default_popup": "BookMarks.html"
+    }
+  
+  }
